@@ -1,0 +1,48 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django migrations
+*/migrations/
+!*/migrations/__init__.py
+
+# Local env files
+.env
+# Virtual environment
+venv/
+myenv/
+ENV/
+
+# SQLite (if used)
+db.sqlite3
+*.sqlite3
+
+# VSCode/JetBrains IDEs
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Static and media
+/staticfiles/
+/media/
+/static/
+/mediafiles/
+
+# App-specific cache or builds
+*.pot
+*.mo
+*.compiled
+*.cache
+*.bak
+
+# Coverage and test reports
+.coverage
+coverage.xml
+htmlcov/
