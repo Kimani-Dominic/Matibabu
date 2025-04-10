@@ -62,6 +62,8 @@ python manage.py runserver
 - ReDoc: `http://127.0.0.1:8000/redoc/`
 
 
+---
+
 ## API Documentation
 
 The API endpoints are structured as follows:
@@ -78,8 +80,6 @@ Authenticates a user.
 **Payload:** `username`, `password`  
 **Response:** Auth token
 
----
-
 ## 👥 Patients
 ### `POST /api/register-patient-info/`  
 Registers additional patient profile data for an authenticated user after login.  
@@ -91,7 +91,6 @@ Updates an existing patient’s profile.
 **Payload:** Partial or full patient fields  
 **Auth required:** ✅
 
----
 
 ## 🧑‍⚕️ Doctors
 
@@ -124,7 +123,6 @@ Retrieves a list of appointments for the logged-in user and doctors who is sched
 Updates the status of a specific appointment i.e approved, cancelled, completed.  
 **Auth required:** ✅
 
----
 
 ## 📁 Medical Records
 
@@ -137,7 +135,6 @@ Creates a new medical record entry for a patient.
 Lists all medical records associated with the logged-in user i.e patient.  
 **Auth required:** ✅
 
----
 
 ## 📄 API Docs UI
 
