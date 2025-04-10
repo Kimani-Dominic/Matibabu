@@ -14,6 +14,7 @@ A django application which helps patients schedule their appointments with docto
 ```bash
 git clone https://github.com/Kimani-Dominic/Matibabu.git
 cd Matibabu
+cd Tiba
 ```
 
 ### 2. Create & Activate Virtual Environment
