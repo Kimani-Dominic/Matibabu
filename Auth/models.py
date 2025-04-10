@@ -4,7 +4,7 @@ from django.contrib.auth.models import AbstractUser
 
 class User(AbstractUser): 
     # user roles
-    is_patient = models.BooleanField(default=False)
+    is_patient = models.BooleanField(default=True)
     is_doctor = models.BooleanField(default=False)
     
     def assign_role(self, role):

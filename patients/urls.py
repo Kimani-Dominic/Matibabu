@@ -10,6 +10,6 @@ router = DefaultRouter()
 urlpatterns = [
     path('api/', include(router.urls)),
     path('api/', PatientViewSet.as_view({'get': 'list'}), name='patients'),
-    path('api/register-patient/', RegisterPatientInfo.as_view(), name="register-patient"),
-    path('api/update-patient/', UpdatePatientInfo.as_view(), name="update-patient"),
+    path('api/register-patient-info/', RegisterPatientInfo.as_view(), name="register-patient"),
+    path('api/update-patient-info/', UpdatePatientInfo.as_view(), name="update-patient"),
 ]

@@ -23,7 +23,7 @@ from appointments.serializers import AppointmentSerializer
 #         serializer = AppointmentSerializer(data=request.data)
         
 #         if not request.user.groups.filter(name='patient').exists():
-#             return Response({"error": "Only patients can create appointments."}, status=status.HTTP_403_FORBIDDEN)
+#             return Response({"error": "Only patients can create appointments."}, status.HTTP_403_FORBIDDEN)
 
 #         # Check if the doctor is available at the requested time
 #         doctor_id = request.data.get('doctor')
@@ -33,12 +33,12 @@ from appointments.serializers import AppointmentSerializer
         
 #         appointment_time = request.data.get('appointment_time')
 #         if Appointment.objects.filter(doctor_id=doctor_id, appointment_time=appointment_time).exists():
-#             return Response({"error": "Doctor is already booked at this time."}, status=status.HTTP_400_BAD_REQUEST)
+#             return Response({"error": "Doctor is already boked at this time."}, status.HTTP_400_BAD_REQUEST)
         
 #         if serializer.is_valid():
 #             appointment = serializer.save()
 #             return Response(AppointmentSerializer(appointment).data, status=status.HTTP_201_CREATED)
-#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+#         return Response(serializer.errors, status.HTTP_400_BAD_REQUEST)
 class CreateAppointmentView(APIView):
     #  Ensures that only authenticated users can create appointments.
     permission_classes = [IsAuthenticated]  

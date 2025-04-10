@@ -147,9 +147,14 @@ Enable basic Auth and enter the basic Auth credentials since the Api endpoints a
 
 Register  User - `http://127.0.0.1:8000/api/register/`
 
+patient
 ![A screenshot of registering patient details from postman](/images/image.png)
-postman
 
-![Curl posst](/images/image2.png)
+![Curl patient info post](/images/image2.png)
 
 
+doctor
+![Doctor info update](/images/image3.png)
+
+appointment
+![alt text](images/image4.png)

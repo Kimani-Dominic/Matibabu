@@ -2,14 +2,16 @@ from django.db import models
 
 from django.contrib.auth import get_user_model
 
-User = get_user_model()
 
-STATUS_CHOICES = [
+STATUS_CHOICES = (
         ('pending', 'Pending'),
         ('confirmed', 'Confirmed'),
         ('completed', 'Completed'),
         ('canceled', 'Canceled'),
-    ]
+)
+
+User = get_user_model()
+
 
 class Appointment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="appointments")
