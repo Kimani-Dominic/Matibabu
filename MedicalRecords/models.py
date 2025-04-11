@@ -10,6 +10,7 @@ class MedicalRecord(models.Model):
     patient = models.ForeignKey(user, on_delete=models.CASCADE, related_name='medical_records')
     appointment = models.OneToOneField(Appointment, on_delete=models.CASCADE, related_name='appointments')
     diagnosis = models.TextField()
+    treatment= models.TextField()
     prescription = models.TextField()
     notes = models.TextField(blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
