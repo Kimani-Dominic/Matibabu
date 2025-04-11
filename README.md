@@ -150,13 +150,9 @@ Creates doctor profile information .
 
 ```json
 {
-  "specialty": "General Practioner",
-  "bio": "Dr. Smith is a board-certified cardiologist with 10+ years of experience treating heart conditions.",
+  "specialty": "GP",
   "available_days": ["Monday", "Wednesday", "Friday"],
-  "available_hours": {
-    "start": "09:00",
-    "end": "17:00"
-  }
+  "available_hours": ["09:00","10:00", "14:00", "15:00", "18:00"]
 }
 
 ```
@@ -226,15 +222,20 @@ Enable basic Auth and enter the basic Auth credentials since the Api endpoints a
 ### Samples
 Register  User - `http://127.0.0.1:8000/api/register/`
 
-patient
+- patient
 ![A screenshot of registering patient details from postman](/images/image.png)
 
 curl post
 ![Curl patient info post](/images/image2.png)
 
 
-doctor
+- doctor
+
 ![Doctor info update](/images/image3.png)
 
-appointment
+- appointment
+
 ![appointment successful](images/image4.png)
+
+- medicalrecords
+![Patient records](<images/image6.png>)
